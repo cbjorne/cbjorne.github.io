@@ -41,6 +41,11 @@
 .hero__img {
     height: var(--size-2xl);
     width: var(--size-2xl);
+    transition: transform 0.3s;
+}
+
+.hero__img:hover {
+    transform: translateY(-2px);
 }
 
 .hero__resume {
