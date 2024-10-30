@@ -1,68 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <title>Colin Bjorne - Software Engineer</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <title>Colin Bjorne</title>
 </head>
 
 <body>
-    <div id="root">
+    <header class="header container">
         <nav>
-            <ul>
-                <li><a href="">Colin Bjorne</a></li>
-                <li><a href="">contact</a></li>
-                <li><a href="">projects</a></li>
-                <li><a href="">about</a></li>
+            <ul class="header__menu">
+                <li>
+                    <a class="header__link" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="header__link" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a class="header__link" href="#contact">Contact</a>
+                </li>
+                <li class="header__line"></li>
+                <li>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="header__sun">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                        </svg>
+
+                    </button>
+                </li>
             </ul>
+            <button class="header__bars">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
         </nav>
-        <main>
-            <div class="main">
-                <div class="left-container">
-                    <div class="main-container">
-                        <h1>
-                            Hello, my name is Colin.
-                        </h1>
-                        <div class="short-description">
-                            <h1>
-                                I am a
-                            </h1>
-                            <h1 class="text-blue">
-                                Software Engineer
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="links">
-                        <a class=" black-box hover:scale-105" href="resume">Resume</a>
-                        <a class="hover:scale-105" href="https://www.linkedin.com/in/colinbjorne/" target="_blank">
-                            <img src="assets/linkedin.svg">
+    </header>
+    <main>
+        <section class="hero container">
+            <div class="hero__content">
+                <h2 class="hero__subtitle">Hi, I'm Colin</h2>
+                <h2 class="hero__title">I am a <strong>Software Engineer</strong></h2>
+                <p class="hero__description">A passionate <strong>Backend / Fullstack</strong> web developer,
+                    specialized in
+                    building large
+                    scale data intensive
+                    application architecture and development</p>
+                <ul class="hero__list">
+                    <li>
+                        <button class="hero__resume btn">Resume</button>
+                    </li>
+                    <li>
+                        <a class="hero__link" href="https://www.linkedin.com/in/colinbjorne/" target="_blank">
+                            <svg class="hero__img" xmlns="http://www.w3.org/2000/svg" width="2500" height="2500"
+                                viewBox="7.025 7.025 497.951 497.95" id="linkedin">
+                                <linearGradient id="a" x1="-974.482" x2="-622.378" y1="1306.773" y2="1658.877"
+                                    gradientTransform="translate(1054.43 -1226.825)" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#2489be"></stop>
+                                    <stop offset="1" stop-color="#0575b3"></stop>
+                                </linearGradient>
+                                <path fill="url(#a)"
+                                    d="M256 7.025C118.494 7.025 7.025 118.494 7.025 256S118.494 504.975 256 504.975 504.976 393.506 504.976 256C504.975 118.494 393.504 7.025 256 7.025zm-66.427 369.343h-54.665V199.761h54.665v176.607zM161.98 176.633c-17.853 0-32.326-14.591-32.326-32.587 0-17.998 14.475-32.588 32.326-32.588s32.324 14.59 32.324 32.588c.001 17.997-14.472 32.587-32.324 32.587zm232.45 199.735h-54.4v-92.704c0-25.426-9.658-39.619-29.763-39.619-21.881 0-33.312 14.782-33.312 39.619v92.704h-52.43V199.761h52.43v23.786s15.771-29.173 53.219-29.173c37.449 0 64.257 22.866 64.257 70.169l-.001 111.825z">
+                                </path>
+                            </svg>
                         </a>
-                        <a class="hover:scale-105" href="https://github.com/cbjorne" target="_blank">
-                            <img src="assets/github.svg">
+                    </li>
+                    <li>
+                        <a class="hero__link" href="https://github.com/cbjorne" target="_blank">
+                            <svg class="hero__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="github">
+                                <g fill="#181616">
+                                    <path fill-rule="evenodd"
+                                        d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
+                                        clip-rule="evenodd"></path>
+                                    <path
+                                        d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm-.743-.55M28.93 94.535c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zm-.575-.618M31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm0 0M34.573 101.373c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm0 0M39.073 103.324c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm0 0M44.016 103.685c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm0 0M48.614 102.903c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0">
+                                    </path>
+                                </g>
+                            </svg>
                         </a>
-                        <a class="hover:scale-105" href="https://leetcode.com/u/cbjorne/" target="_blank">
-                            <img src="assets/leetcode.svg">
+                    </li>
+                    <li>
+                        <a class="hero__link" href="https://leetcode.com/u/cbjorne/" target="_blank">
+                            <svg class="hero__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="leetcode">
+                                <path fill="#070706"
+                                    d="M22 14.355c0-.742-.564-1.346-1.26-1.346H10.676c-.696 0-1.26.604-1.26 1.346s.563 1.346 1.26 1.346H20.74c.696.001 1.26-.603 1.26-1.346z">
+                                </path>
+                                <path fill="#f3ab1b"
+                                    d="m3.482 18.187 4.313 4.361c.973.979 2.318 1.452 3.803 1.452 1.485 0 2.83-.512 3.805-1.494l2.588-2.637c.51-.514.492-1.365-.039-1.9-.531-.535-1.375-.553-1.884-.039l-2.676 2.607c-.462.467-1.102.662-1.809.662s-1.346-.195-1.81-.662l-4.298-4.363c-.463-.467-.696-1.15-.696-1.863 0-.713.233-1.357.696-1.824l4.285-4.38c.463-.467 1.116-.645 1.822-.645s1.346.195 1.809.662l2.676 2.606c.51.515 1.354.497 1.885-.038.531-.536.549-1.387.039-1.901l-2.588-2.636a4.994 4.994 0 0 0-2.392-1.33l-.034-.007 2.447-2.503c.512-.514.494-1.366-.037-1.901-.531-.535-1.376-.552-1.887-.038l-10.018 10.1C2.509 11.458 2 12.813 2 14.311c0 1.498.509 2.896 1.482 3.876z">
+                                </path>
+                                <path fill="#070706"
+                                    d="M8.115 22.814a2.109 2.109 0 0 1-.474-.361c-1.327-1.333-2.66-2.66-3.984-3.997-1.989-2.008-2.302-4.937-.786-7.32a6 6 0 0 1 .839-1.004L13.333.489c.625-.626 1.498-.652 2.079-.067.56.563.527 1.455-.078 2.066-.769.776-1.539 1.55-2.309 2.325-.041.122-.14.2-.225.287-.863.876-1.75 1.729-2.601 2.618-.111.116-.262.186-.372.305-1.423 1.423-2.863 2.83-4.266 4.272-1.135 1.167-1.097 2.938.068 4.127 1.308 1.336 2.639 2.65 3.961 3.974.067.067.136.132.204.198.468.303.474 1.25.183 1.671-.321.465-.74.75-1.333.728-.199-.006-.363-.086-.529-.179z">
+                                </path>
+                            </svg>
                         </a>
-                    </div>
+                    </li>
+                </ul>
+                <hr class="hero__hr">
+                <h3 class="hero__sub-subtitle">Technologies</h3>
+                <div class="hero__sub-ul-container">
+                    <ul class="hero__sub-ul">
+                        <li class="hero__sub-list">C#</li>
+                        <li class="hero__sub-list">ReactJS</li>
+                        <li class="hero__sub-list">Python</li>
+                    </ul>
+                    <ul class="hero__sub-ul">
+                        <li class="hero__sub-list">Vue3</li>
+                        <li class="hero__sub-list">Ruby on Rails</li>
+                        <li class="hero__sub-list">Spring</li>
+                    </ul>
                 </div>
-                <div class="right-container">
-                    <img src="assets/desk.png" alt="Desk">
-                </div>
             </div>
-            <div class="about">
-
+            <div class="hero__img-wrapper">
+                <img class="hero__big-img" src="/desk.png" alt="Desk">
             </div>
-            <div class="projects">
-
-            </div>
-            <div class="contact">
-
-            </div>
-        </main>
-    </div>
+        </section>
+        <!-- <section></section>
+        <section></section>
+        <section></section> -->
+    </main>
+    <footer></footer>
+    <script type="module" src="./src/main.js"></script>
 </body>
 
 </html>
