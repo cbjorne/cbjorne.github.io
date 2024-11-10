@@ -2,7 +2,7 @@ const mobileNav = () => {
     const headerBtn = document.querySelector('.header__bars');
     const mobileNav = document.querySelector('.mobile-nav');
     const mobileLinks = document.querySelectorAll('.mobile-nav__link');
-    console.log('got here');
+
     let isMobileNavOpen = false;
     headerBtn.addEventListener('click', () => {
         isMobileNavOpen = !isMobileNavOpen;
