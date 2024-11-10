@@ -13,19 +13,19 @@
 }
 
 .hero__title {
-    color: var(--clr-dark);
+    color: var(--clr-slate700);
     font-size: var(--size-2xl);
 }
 
 .hero__subtitle {
-    color: var(--clr-dark);
+    color: var(--clr-slate700);
     font-size: var(--size-2xl);
 }
 
 .hero__description {
     max-width: 60ch;
     font-size: var(--size-sm);
-    color: var(--clr-slate700);
+    color: var(--clr-slate500);
     padding-bottom: .5em;
 }
 
@@ -59,7 +59,7 @@
 
 .hero__sub-subtitle {
     padding-top: 0.5em;
-    color: var(--clr-dark);
+    color: var(--clr-slate700);
     font-size: var(--size-2xl);
 }
 
