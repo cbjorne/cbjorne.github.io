@@ -39,6 +39,7 @@ body {
     font-family: 'General Sans', sans-serif;
     background-color: var(--clr-light);
     color: var(--clr-dark);
+    border: 1px solid white;
 }
 
 html {
