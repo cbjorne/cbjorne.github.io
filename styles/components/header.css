@@ -10,6 +10,7 @@
 
 .header__menu {
     display: none;
+    transition: 0.3s;
 }
 
 .header__bars {
