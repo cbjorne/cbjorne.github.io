@@ -15,6 +15,9 @@ jobs:
 
       - name: Build project
         run: npm run build
+      
+      - name: Deploy Project
+        run: npm run deploy
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
