@@ -71,3 +71,12 @@ button {
 strong {
     color: var(--clr-blue);
 }
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--clr-blue);
+    outline: 1px solid var(--clr-blue);
+}
