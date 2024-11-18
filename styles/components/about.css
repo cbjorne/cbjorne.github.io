@@ -1,4 +1,4 @@
-.hero {
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,29 +7,29 @@
     margin-top: 2rem;
 }
 
-.hero__content {
+.about__content {
     display: flex;
     flex-direction: column;
 }
 
-.hero__title {
-    color: var(--clr-slate700);
+.about__title {
+    color: var(--clr-dark);
     font-size: var(--size-2xl);
 }
 
-.hero__subtitle {
-    color: var(--clr-slate700);
+.about__subtitle {
+    color: var(--clr-dark);
     font-size: var(--size-2xl);
 }
 
-.hero__description {
+.about__description {
     max-width: 60ch;
     font-size: var(--size-sm);
-    color: var(--clr-slate500);
+    color: var(--clr-slate700);
     padding-bottom: .5em;
 }
 
-.hero__list {
+.about__list {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -38,32 +38,32 @@
     margin-bottom: 1em;
 }
 
-.hero__img {
+.about__img {
     height: var(--size-2xl);
     width: var(--size-2xl);
     transition: transform 0.3s;
 }
 
-.hero__img:hover {
+.about__img:hover {
     transform: translateY(-2px);
 }
 
-.hero__resume {
+.about__resume {
     font-size: var(--size-xs);
     line-height: 1em;
 }
 
-.hero__hr {
+.about__hr {
     border-color: var(--clr-slate300);
 }
 
-.hero__sub-subtitle {
+.about__sub-subtitle {
     padding-top: 0.5em;
-    color: var(--clr-slate700);
+    color: var(--clr-dark);
     font-size: var(--size-2xl);
 }
 
-.hero__sub-ul {
+.about__sub-ul {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -72,17 +72,17 @@
     flex: 1;
 }
 
-.hero__sub-list {
+.about__sub-list {
     font-size: var(--size-sm);
-    color: var(--clr-slate500);
+    color: var(--clr-slate700);
 }
 
-.hero__sub-list::before {
+.about__sub-list::before {
     content: '';
     margin-left: 0.5em;
 }
 
-.hero__sub-ul-container {
+.about__sub-ul-container {
     display: flex;
     text-align: left;
     justify-content: space-between;
@@ -90,53 +90,53 @@
 }
 
 @media (min-width: 640px) {
-    .hero__subtitle {
+    .about__subtitle {
         font-size: var(--size-3xl);
     }
 
-    .hero__title {
+    .about__title {
         font-size: var(--size-3xl);
     }
 
-    .hero__description {
+    .about__description {
         font-size: var(--size-base);
         padding-bottom: .75em;
     }
 
-    .hero__img {
+    .about__img {
         height: var(--size-3xl);
         width: var(--size-3xl);
     }
 
-    .hero__resume {
+    .about__resume {
         font-size: var(--size-sm);
         line-height: 1.125em;
     }
 
-    .hero__img-wrapper {
+    .about__img-wrapper {
         margin: 0 auto;
     }
 
-    .hero__big-img {
+    .about__big-img {
         width: 28rem;
     }
 
-    .hero__sub-subtitle {
+    .about__sub-subtitle {
         padding-top: 0.5em;
         font-size: var(--size-3xl);
     }
 
-    .hero__sub-list {
+    .about__sub-list {
         font-size: var(--size-base);
     }
 
-    .hero__sub-ul-container {
+    .about__sub-ul-container {
         margin-left: 8em;
     }
 }
 
 @media (min-width: 1024px) {
-    .hero {
+    .about {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -144,52 +144,52 @@
         padding: 8em;
     }
 
-    .hero__list {
+    .about__list {
         justify-content: left;
     }
 
-    .hero__sub-ul {
+    .about__sub-ul {
         text-align: left;
     }
 
-    .hero__sub-ul-container {
+    .about__sub-ul-container {
         margin-left: 0.5em;
     }
 }
 
 @media (min-width: 1280px) {
-    .hero {
+    .about {
         padding: 6em;
     }
 
-    .hero__subtitle {
+    .about__subtitle {
         font-size: var(--size-4xl);
     }
 
-    .hero__title {
+    .about__title {
         font-size: var(--size-4xl);
     }
 
-    .hero__description {
+    .about__description {
         font-size: var(--size-lg);
         padding-bottom: 1em;
     }
 
-    .hero__img {
+    .about__img {
         height: var(--size-4xl);
         width: var(--size-4xl);
     }
 
-    .hero__resume {
+    .about__resume {
         font-size: var(--size-lg);
         line-height: 1.125em;
     }
 
-    .hero__sub-subtitle {
+    .about__sub-subtitle {
         font-size: var(--size-4xl);
     }
 
-    .hero__sub-list {
+    .about__sub-list {
         font-size: var(--size-lg);
     }
 }

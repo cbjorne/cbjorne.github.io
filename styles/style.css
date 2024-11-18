@@ -33,6 +33,10 @@
 .light-mode {
     --clr-light: #171717;
     --clr-dark: #f1f5f9;
+    --clr-slate900: #cbd5e1;
+    --clr-slate700: #64748b;
+    --clr-slate500: #334155;
+    --clr-slate300: #0f172a;
 }
 
 body {
