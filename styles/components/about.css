@@ -85,8 +85,9 @@
 .about__sub-ul-container {
     display: flex;
     text-align: left;
+    align-items: center;
     justify-content: space-between;
-    margin-left: 7em;
+    margin-left: 6.5em;
 }
 
 @media (min-width: 640px) {
