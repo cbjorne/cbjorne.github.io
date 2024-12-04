@@ -4,8 +4,8 @@
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    z-index: 9999;
     position: relative;
+    z-index: 9999;
 }
 
 .header__name {
