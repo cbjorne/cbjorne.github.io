@@ -30,7 +30,7 @@
     line-height: calc(1em + 0.5rem);
 }
 
-.light-mode {
+.dark {
     --clr-light: #171717;
     --clr-dark: #f1f5f9;
     --clr-slate900: #cbd5e1;
