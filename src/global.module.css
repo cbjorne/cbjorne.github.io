@@ -34,7 +34,7 @@
     padding-right: 0.5rem;
 }
 
-.invert-colors {
+.invertColors {
     filter: invert(1);
 }
 
