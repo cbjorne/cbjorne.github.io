@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - react-conversion
+      - dash-auto
 
 jobs:
   build:
