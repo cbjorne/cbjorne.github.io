@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - react-conversion
+      - dash-auto
 
 jobs:
   build:
@@ -24,6 +24,9 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Copy index.html to 404.html
+        run: cp ./dist/index.html ./dist/404.html
+
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
         with:
@@ -34,7 +37,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/dash-auto'
 
     steps:
       - name: Download artifact

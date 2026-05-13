@@ -1,0 +1,472 @@
+/* ── Base ── */
+.page {
+    font-family: 'General Sans', system-ui, sans-serif;
+    color: #1a1a1a;
+    background: #f8f8f6;
+}
+
+/* ── Header ── */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #111;
+    color: #fff;
+    border-bottom: 3px solid #e7000b;
+}
+
+.headerInner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    flex-shrink: 0;
+}
+
+.logoAccent {
+    color: #e7000b;
+}
+
+.nav {
+    display: flex;
+    gap: 1.75rem;
+    margin-left: auto;
+}
+
+.nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+/* ── Buttons ── */
+.ctaBtn {
+    display: inline-block;
+    background: #e7000b;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.55rem 1.3rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.ctaBtn:hover {
+    background: #b45309;
+}
+
+.outlineBtn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.55rem 1.3rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    color: #fff;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.outlineBtn:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* ── Hero ── */
+.hero {
+    background: linear-gradient(135deg, #111 0%, #1e293b 60%, #0f172a 100%);
+    color: #fff;
+    padding: 7rem 1.5rem 6rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 60% 50%, rgba(217, 119, 6, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.heroContent {
+    position: relative;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.heroEyebrow {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #e7000b;
+    margin-bottom: 1rem;
+}
+
+.heroTitle {
+    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.2rem;
+}
+
+.heroSub {
+    font-size: 1.15rem;
+    color: #94a3b8;
+    margin-bottom: 2.2rem;
+}
+
+.heroBtns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ── Sections ── */
+.section {
+    padding: 5rem 1.5rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sectionTitle {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+}
+
+.sectionSub {
+    color: #64748b;
+    font-size: 1.05rem;
+    margin-bottom: 3rem;
+}
+
+/* ── Services ── */
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.serviceCard {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.75rem;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.serviceCard:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.serviceIcon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.serviceCard h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.serviceCard p {
+    font-size: 0.9rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* ── About ── */
+.aboutSection {
+    background: #1a1a1a;
+    color: #e2e8f0;
+}
+
+.aboutSection .sectionTitle {
+    color: #fff;
+}
+
+.aboutSection p {
+    color: #94a3b8;
+    line-height: 1.75;
+    font-size: 0.95rem;
+}
+
+.aboutGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.stat strong {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #e7000b;
+    line-height: 1;
+}
+
+.stat span {
+    font-size: 0.8rem;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.aboutImagePlaceholder {
+    background: #2d2d2d;
+    border-radius: 16px;
+    border: 1px solid #333;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.aboutImagePlaceholder span {
+    font-size: 5rem;
+}
+
+/* ── Contact ── */
+.contactGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contactItem {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.contactItem span {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.contactItem strong {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.contactItem p {
+    color: #64748b;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    background: #fff;
+    color: #1a1a1a;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    outline: none;
+    border-color: #e7000b;
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.1);
+}
+
+.contactForm textarea {
+    resize: vertical;
+}
+
+/* ── Footer ── */
+.footer {
+    background: #111;
+    color: #64748b;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    border-top: 3px solid #e7000b;
+}
+
+/* ── Responsive: Tablet (≤768px) ── */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .aboutGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contactGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .aboutImagePlaceholder {
+        height: 220px;
+    }
+
+    .hero {
+        padding: 5rem 1.5rem 4rem;
+    }
+
+    .section {
+        padding: 4rem 1.5rem;
+    }
+}
+
+/* ── Responsive: Mobile (≤480px) ── */
+@media (max-width: 480px) {
+    .headerInner {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .ctaBtn {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.82rem;
+    }
+
+    .hero {
+        padding: 3.5rem 1rem 3rem;
+    }
+
+    .heroTitle {
+        font-size: clamp(1.9rem, 8vw, 2.6rem);
+    }
+
+    .heroSub {
+        font-size: 1rem;
+    }
+
+    .heroBtns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heroBtns .ctaBtn,
+    .heroBtns .outlineBtn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section {
+        padding: 3rem 1rem;
+    }
+
+    .sectionTitle {
+        font-size: 1.5rem;
+    }
+
+    .sectionSub {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+    }
+
+    .servicesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .serviceCard {
+        padding: 1.25rem;
+    }
+
+    .stats {
+        gap: 1.5rem;
+    }
+
+    .stat strong {
+        font-size: 1.5rem;
+    }
+
+    .aboutImagePlaceholder {
+        height: 180px;
+    }
+
+    .aboutImagePlaceholder span {
+        font-size: 3.5rem;
+    }
+
+    .contactItem span {
+        font-size: 1.2rem;
+    }
+
+    .contactForm input,
+    .contactForm textarea {
+        font-size: 1rem;
+    }
+}
