@@ -47,6 +47,25 @@ body {
 
 html {
     scroll-behavior: smooth;
+    scrollbar-color: var(--clr-blue) transparent;
+    scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--clr-blue);
+    border-radius: 4px;
+}
+
+html.parbogey-page {
+    scrollbar-color: #c9a84c transparent;
+}
+
+html.parbogey-page::-webkit-scrollbar-thumb {
+    background-color: #c9a84c;
 }
 
 img,

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './ParBogey.module.css';
 
 type Category = 'All' | 'Polos' | 'Outerwear' | 'Bottoms' | 'Accessories' | 'Footwear';
@@ -122,6 +122,11 @@ const categories: Category[] = ['All', 'Polos', 'Outerwear', 'Bottoms', 'Accesso
 const ParBogeyPage = () => {
     const [activeCategory, setActiveCategory] = useState<Category>('All');
     const visibleProducts = activeCategory === 'All' ? products : products.filter(p => p.category === activeCategory);
+
+    useEffect(() => {
+        document.documentElement.classList.add('parbogey-page');
+        return () => document.documentElement.classList.remove('parbogey-page');
+    }, []);
 
     return (
         <div className={styles.page}>

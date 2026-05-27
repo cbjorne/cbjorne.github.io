@@ -72,14 +72,16 @@ const About = () => {
                 <h3 className={styles.about__sub_subtitle}>Technologies</h3>
                 <div className={styles.about__sub_ul_container}>
                     <ul className={styles.about__sub_ul}>
-                        <li className={styles.about__sub_list}>.NET</li>
-                        <li className={styles.about__sub_list}>React</li>
-                        <li className={styles.about__sub_list}>Vue</li>
+                        <li className={styles.about__sub_list}>C# / .NET</li>
+                        <li className={styles.about__sub_list}>Go</li>
+                        <li className={styles.about__sub_list}>TypeScript</li>
+                        <li className={styles.about__sub_list}>Rust</li>
                     </ul>
                     <ul className={styles.about__sub_ul}>
-                        <li className={styles.about__sub_list}>NodeJS</li>
-                        <li className={styles.about__sub_list}>Django</li>
-                        <li className={styles.about__sub_list}>Golang</li>
+                        <li className={styles.about__sub_list}>React</li>
+                        <li className={styles.about__sub_list}>PostgreSQL</li>
+                        <li className={styles.about__sub_list}>Python</li>
+                        <li className={styles.about__sub_list}>GCP / AWS</li>
                     </ul>
                 </div>
             </div>
