@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
 import DashAutoPage from '../sample-pages/DashAutoPage/DashAuto';
 import ParBogeyPage from '../sample-pages/ParBogey/ParBogey';
+import PeterPage from '../sample-pages/Peter/Peter';
 
 export const router = createBrowserRouter([
     {
@@ -15,5 +16,9 @@ export const router = createBrowserRouter([
     {
         path: '/parbogey',
         element: <ParBogeyPage />,
+    },
+    {
+        path: '/peter',
+        element: <PeterPage />,
     }
 ]);
